@@ -1,0 +1,23 @@
+{
+  "name": "typescript-bundling",
+  "version": "1.0.0",
+  "description": "Skeleton app showing how to use TypeScript to bundle your app",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "",
+    "typings": "typings",
+    "gulp": "gulp"
+  },
+  "author": "Luke Autry <lukeautry@gmail.com> (http://www.lukeautry.com)",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^3.2.0",
+    "gulp-typescript": "^2.12.1",
+    "require-dir": "^0.3.0",
+    "systemjs": "^0.19.24",
+    "ts-node": "^0.7.0",
+    "typings": "^0.7.9"
+  }
+}

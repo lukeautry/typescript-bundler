@@ -1,0 +1,11 @@
+{
+  "name": "typescript-bundling",
+  "version": false,
+  "ambientDependencies": {
+    "gulp": "registry:dt/gulp#3.8.0+20160316155526",
+    "gulp-typescript": "registry:dt/gulp-typescript#0.0.0+20160317120654",
+    "node": "registry:dt/node#4.0.0+20160319033040",
+    "orchestrator": "registry:dt/orchestrator#0.0.0+20160316155526",
+    "q": "registry:dt/q#0.0.0+20160317120654"
+  }
+}

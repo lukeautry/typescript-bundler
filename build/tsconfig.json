@@ -1,0 +1,13 @@
+// this is the TypeScript configuration for ts-node, which is the runtime compiler
+// allowing us to write all the tasks in TypeScript
+
+{
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs"
+	},
+	"exclude": [
+		"node_modules",
+		"typings"
+	]
+}

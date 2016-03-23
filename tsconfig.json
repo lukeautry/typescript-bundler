@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "outFile": "bundle.js"
+    }
+}
