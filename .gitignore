@@ -1,6 +1,5 @@
 node_modules/**
 src/scripts/bundle.js
-src/scripts/vendor/**
 typings/**
 src/scripts/systemjs**
 src/styles/*.css
