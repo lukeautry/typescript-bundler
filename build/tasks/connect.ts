@@ -1,4 +1,4 @@
-/// <reference path="../ambient.d.ts" />
+/// <reference path="../custom_typings/ambient.d.ts" />
 
 import * as gulp from "gulp";
 import * as connect from "gulp-connect";

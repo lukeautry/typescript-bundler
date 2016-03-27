@@ -1,4 +1,4 @@
-/// <reference path="../typings/main.d.ts" />
+/// <reference path="../../typings/main.d.ts" />
 
 // type definitions that aren't registered @ DefinitelyTyped, so we need to create them manually
 declare module 'gulp-connect' {
@@ -22,4 +22,14 @@ declare module 'gulp-connect' {
     }
 
     export = Connect;
+}
+
+declare module "streamqueue" {
+	var _: any;
+	export = _;
+}
+
+declare module "gulp-clean-css" {
+    var _: any;
+    export = _;
 }

@@ -5,7 +5,7 @@
 import * as gulp from "gulp";
 import {Paths} from "../paths";
 
-gulp.task("copy-vendor", () => {
+gulp.task("copy-systemjs", () => {
     return gulp.src("./node_modules/systemjs/dist/**/*.js")
-        .pipe(gulp.dest(`${Paths.WebRoot}/scripts/vendor/systemjs`));
+        .pipe(gulp.dest(Paths.SystemJsDirectory));
 });

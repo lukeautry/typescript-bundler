@@ -4,18 +4,25 @@
   "description": "Skeleton app showing how to use TypeScript to bundle your app",
   "main": "index.js",
   "scripts": {
-    "postinstall": "",
+    "postinstall": "typings install && gulp copy-systemjs",
     "typings": "typings",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "start": "gulp build && gulp watch"
   },
   "author": "Luke Autry <lukeautry@gmail.com> (http://www.lukeautry.com)",
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-concat": "^2.6.0",
     "gulp-connect": "^3.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.12.1",
+    "gulp-uglify": "^1.5.3",
     "require-dir": "^0.3.0",
+    "streamqueue": "^1.1.1",
     "systemjs": "^0.19.24",
     "ts-node": "^0.7.0",
     "typings": "^0.7.9"
