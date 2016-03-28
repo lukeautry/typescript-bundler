@@ -4,7 +4,7 @@
   "description": "Skeleton app showing how to use TypeScript to bundle your app",
   "main": "index.js",
   "scripts": {
-    "postinstall": "typings install && gulp copy-systemjs",
+    "postinstall": "typings install",
     "typings": "typings",
     "gulp": "gulp",
     "start": "gulp build && gulp watch"
