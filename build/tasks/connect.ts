@@ -6,7 +6,7 @@ import {Paths} from "../paths";
 
 gulp.task("connect", () => {
    connect.server({
-       root: Paths.WebRoot,
+       root: Paths.DistDirectory,
        livereload: true,
        port: 8888,
        https: false

@@ -10,9 +10,9 @@ import {Paths} from "../paths";
 const tsProject = ts.createProject("tsconfig.json");
 
 gulp.task("typescript", () => {
-    return streamqueue({objectMode: true}, getModuleLoader(), getCompiledTypeScript(), getBootstrapCode())
+    return streamqueue({objectMode: true}, getModuleLoader(), getSystemConfig(), getCompiledTypeScript(), getMainImport())
             .pipe(concat("bundle.js"))
-            .pipe(gulp.dest(`${Paths.WebRoot}/scripts`))
+            .pipe(gulp.dest(Paths.ScriptsDist))
             .pipe(connect.reload());
 });
 
@@ -24,10 +24,6 @@ function getCompiledTypeScript() {
         .pipe(uglify());
 }
 
-function getModuleLoader() {
-    return gulp.src(Paths.SystemJsFile); 
-}
-
-function getBootstrapCode() {
-    return gulp.src(Paths.BootstrapSrc);
-}
+const getModuleLoader = () => gulp.src(Paths.SystemJsFile);
+const getMainImport = () => gulp.src(Paths.MainImportSrc);
+const getSystemConfig = () => gulp.src(Paths.SystemConfigSrc);

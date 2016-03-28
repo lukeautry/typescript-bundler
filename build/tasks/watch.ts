@@ -10,5 +10,6 @@ gulp.task("watch", ["connect"], () => {
 
 gulp.task("html", () => {
     gulp.src(Paths.HtmlSrc)
+        .pipe(gulp.dest(Paths.DistDirectory))
         .pipe(connect.reload());
 });

@@ -2,4 +2,4 @@
 
 import * as gulp from "gulp";
 
-gulp.task("build", ["typescript", "sass"]);
+gulp.task("build", ["typescript", "sass", "html"]);

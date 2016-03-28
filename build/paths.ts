@@ -1,12 +1,16 @@
-const webRoot = "./src";
+const srcDirectory = "./src";
+const distDirectory = "./dist";
 
 export const Paths = {
-    WebRoot: webRoot,
-    HtmlSrc: `${webRoot}/**/*.html`,
-    TypeScriptSrc: `${webRoot}/scripts/**/*.ts`,
-    VendorSrc: `${webRoot}/scripts/vendor/**/*.js`,
+    SrcDirectory: srcDirectory,
+    DistDirectory: distDirectory,
+    HtmlSrc: `${srcDirectory}/**/*.html`,
+    TypeScriptSrc: `${srcDirectory}/scripts/**/*.ts`,
+    VendorSrc: `${srcDirectory}/scripts/vendor/**/*.js`,
     SystemJsFile: "./node_modules/systemjs/dist/system.js",
-    BootstrapSrc: `${webRoot}/scripts/bootstrap.js`,
-    StylesSrc: `styles/app.scss`,
-    StylesDist: `${webRoot}/styles`
+    MainImportSrc: `${srcDirectory}/bootstrapper/system.main.js`,
+    SystemConfigSrc: `${srcDirectory}/bootstrapper/system.config.js`,
+    ScriptsDist: `${distDirectory}/scripts`,
+    StylesSrc: `${srcDirectory}/styles/app.scss`,
+    StylesDist: `${distDirectory}/styles`
 };

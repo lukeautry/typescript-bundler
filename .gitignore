@@ -3,3 +3,4 @@ src/scripts/bundle.js
 typings/**
 src/scripts/systemjs**
 src/styles/*.css
+dist/**
