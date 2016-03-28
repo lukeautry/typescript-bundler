@@ -6,7 +6,7 @@ The goal is to provide a simple skeleton project that can bundle together code u
 
 * Run npm install
 * Don't run gulp tasks directly, use npm scripts. Why? Because forcing global npm installs leads to bad times.
-* npm run start to serve from localhost and watch sass/ts/html for changes
+* npm start to serve from localhost and watch sass/ts/html for changes
 * npm run typings install -- [args] for new typings (see [Typings](https://github.com/typings/typings))
 
 #What you can do with this project

@@ -1,6 +1,9 @@
 /// <reference path="../../typings/main.d.ts" />
 
-// type definitions that aren't registered @ DefinitelyTyped, so we need to create them manually
+/*
+    Type definitions that aren't registered @ DefinitelyTyped, so we need to create them manually
+*/
+
 declare module 'gulp-connect' {
     module Connect {
         export interface LiveReloadOption {
