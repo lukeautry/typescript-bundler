@@ -1,4 +1,3 @@
-import "./vendor/sample";
 import {FirstView} from "./content/firstView";
 import {SecondView} from "./content/secondView";
 import {ThirdView} from "./content/thirdView";
