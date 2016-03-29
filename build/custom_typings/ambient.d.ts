@@ -36,3 +36,8 @@ declare module "gulp-clean-css" {
     var _: any;
     export = _;
 }
+
+declare module "gulp-file" {
+    var _: any;
+    export = _;
+}

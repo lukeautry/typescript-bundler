@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
         "module": "system",
-        "outFile": "bundle.js",
         "allowJs": true
     }
 }
