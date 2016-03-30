@@ -4,9 +4,10 @@ The goal is to provide a simple skeleton project that can bundle together code u
 
 #Getting started
 
-* Run npm install
+* npm install
 * Don't run gulp tasks directly, use npm scripts. Why? Because forcing global npm installs leads to bad times.
-* npm start to serve from localhost and watch sass/ts/html for changes
+* npm start:dev (unbundled) or start:prod(bundled) to serve from localhost and watch sass/ts/html for changes
+* npm build:dev (unbundled) or build:dev(bundled) to build dist content to serve
 * npm run typings install -- [args] for new typings (see [Typings](https://github.com/typings/typings))
 
 #What you can do with this project
