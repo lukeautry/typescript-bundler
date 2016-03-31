@@ -30,15 +30,6 @@ gulp.task("typescript:prod", ["create-empty-js"], () => {
         .pipe(connect.reload());
 });
 
-/* 
-    SystemJS hack; since lib js is bundled by TypeScript compiler, SystemJS doesn't need to import the files for real
-    See _system.config.prod.js
-*/
-gulp.task("create-empty-js", () => {
-    return file("empty.js", "", { src: true})
-        .pipe(gulp.dest(Paths.ScriptsDist));
-});
-
 /* This compiles TypeScript in-place for the dev configuration */
 gulp.task("typescript:dev", () => {
     return compileTypeScript(devProject)
@@ -54,6 +45,15 @@ gulp.task("typescript:dev:bundle", () => {
    return streamqueue({ objectMode: true}, getModuleLoader(), getDevSystemConfig(), getSystemImport())
     .pipe(concat(bundleFileName))
     .pipe(gulp.dest(Paths.ScriptsDist));
+});
+
+/* 
+    SystemJS hack; since libs are bundled by TypeScript compiler, SystemJS doesn't need to import the files for real
+    See src/bootstrap/_system.config.prod.js
+*/
+gulp.task("create-empty-js", () => {
+    return file("empty.js", "", { src: true})
+        .pipe(gulp.dest(Paths.ScriptsDist));
 });
 
 function compileTypeScript(project: ts.Project) {
